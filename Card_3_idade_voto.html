@@ -1,0 +1,33 @@
+>
+<head>
+    <title>Verificação de Idade para Votação</title>
+</head>
+<body>
+    <h1>Verificação de Idade para Votação</h1>
+    <form>
+        <label for="idade">Insira sua idade:</label>
+        <input type="number" id="idade" name="idade">
+        <button type="button" onclick="verificarIdade()">Verificar</button>
+    </form>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarIdade() {
+            var idade = document.getElementById('idade').value;
+            var mensagem = idade >= 16 ? "Você pode votar!" : "Você não pode votar ainda.";
+            document.getElementById('resultado').innerText = mensagem;
+        }
+    </script>
+</body>
+
+<script>
+
+var idade = 18; // Você pode alterar este valor para testar diferentes cenários
+
+    if (idade >= 16) {
+        console.log("Você pode votar!");
+    } else {
+        console.log("Você não pode votar ainda.");
+    }
+
+</script>
